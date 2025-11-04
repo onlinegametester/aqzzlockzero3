@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clickable Image Sections</title>
+  <style>
+    /* 🎨 Theme Colors */
+    :root {
+      --page-bg: #ff8abf;       /* pink background */
+      --box-bg: #7dc9ff;        /* blue box background */
+      --text-color: #8b5e3c;    /* brown text */
+      --hover-accent: #fff7a8;  /* banana-yellow highlight */
+      --radius: 16px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--page-bg);
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: var(--text-color);
+    }
+
+    header {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      margin-top: 4rem;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .long-box {
+      width: 90%;
+      max-width: 900px;
+      min-height: 260px;
+      background: var(--box-bg);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+      border: 2px solid var(--text-color);
+      color: var(--text-color);
+      transition: all 0.25s ease;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .long-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    /* 🖼️ Transparent PNG Image Styles */
+    .image-link {
+      display: inline-block;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .image-link img {
+      width: 220px;
+      height: auto;
+      object-fit: contain;
+      background: transparent;
+      transition: all 0.25s ease;
+      filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.15));
+    }
+
+    .image-link img:hover {
+      transform: scale(1.08);
+      filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
+    }
+
+    /* 📝 Text Area */
+    .text-area {
+      flex: 1;
+      margin-left: 2rem;
+      text-align: left;
+    }
+
+    .text-area h2 {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    .text-area p {
+      line-height: 1.5;
+      font-size: 1.1rem;
+    }
+
+    /* Divider lines */
+    .divider {
+      width: 80%;
+      height: 2px;
+      background: var(--text-color);
+      margin: 50px auto;
+      border-radius: 2px;
+      opacity: 0.5;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 720px) {
+      .long-box {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .text-area {
+        margin-left: 0;
+        margin-top: 1rem;
+      }
+
+      .image-link img {
+        width: 160px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Clickable Image Sections</header>
+
+  <!-- Section 1 -->
+  <main>
+    <div class="long-box">
+      <a href="https://example.com/page1" class="image-link" target="_blank">
+        <!-- Replace with your transparent PNG -->
+        <img src="https://hartstownschool-my.sharepoint.com/personal/22mariusbotezat_hartstowncs_ie/Documents/Microsoft%20Teams%20Chat%20Files/Multim%C3%A9dia__2_-removebg-preview.png" alt="Link Image 1">
+      </a>
+      <div class="text-area">
+        <h2>Section 1 Title</h2>
+        <p>
+          This section can describe what the image links to. The image on the left is transparent and pops subtly when hovered.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <div class="divider"></div>
+
+  <!-- Section 2 -->
+  <main>
+    <div class="long-box">
+      <a href="https://example.com/page2" class="image-link" target="_blank">
+        <!-- Replace with your transparent PNG -->
+        <img src="https://hartstownschool-my.sharepoint.com/personal/22mariusbotezat_hartstowncs_ie/Documents/Microsoft%20Teams%20Chat%20Files/Multim%C3%A9dia__3_-removebg-preview.png" alt="Link Image 2">
+      </a>
+      <div class="text-area">
+        <h2>Section 2 Title</h2>
+        <p>
+          Another clean, transparent image example with smooth hover effect and matching brown text.
+        </p>
+      </div>
+    </div>
+  </main>
+  
+ <h4>___________________________________________________________________________________________________________________________________________________________________________</h4>
+ 
+ 
+ 
+ 
+ <h1>About Us 💖</h1>
+
+  <footer>© Stitch n' Stuff</footer>
+
+</body>
+</html>
